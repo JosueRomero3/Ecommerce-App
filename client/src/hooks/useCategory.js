@@ -3,6 +3,7 @@ import axios from "axios";
 
 export default function useCategory() {
   const [categories, setCategories] = useState([]);
+  
   //get cat
   const getCategories = async () => {
     try {
