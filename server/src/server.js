@@ -18,7 +18,9 @@ connectDB();
 const app = express();
 
 //middelwares
-app.use(cors())
+app.use(cors({
+    origin:["http://localhost:8080", "https://Ecommerce-App.onrender.com"]
+}))
 app.use(express.json());
 app.use(morgan("dev"));
 
